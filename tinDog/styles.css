@@ -1,0 +1,449 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+   scroll-behavior: smooth;
+}
+
+.backToTop {
+   position: fixed;
+   bottom: 5px;
+   right: 5px;
+   padding: 5px;
+   border: .5px solid whitesmoke;
+   border-radius: 4px;
+   z-index: 5;
+   background: linear-gradient(
+      to right,
+      #ff4c68 0%,
+      #ef8172 100%
+   );
+   transition: all 0.3s ease;
+
+}
+
+.backToTop a {
+   text-decoration: none;
+   color: #fff;
+   font-weight: bold;
+}
+
+.backToTop:hover {
+   transform: scale(1.2);
+   right: 1.2%;
+   bottom: 1.2%;
+}
+
+.sectionContainer {
+   background: #ff4c68;
+   color: #fff;
+   padding: 3% 15% 7%;
+   width: 100%;
+   flex-direction: column;
+}
+
+.navbar {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-bottom: 50px;
+   flex-wrap: wrap;
+}
+
+.navbarBrand {
+   padding: 12px 0px;
+   margin: 0px 16px 0px 0px;
+   text-decoration: none;
+   color: #fff;
+   font-family: Ubuntu;
+   font-size: 2.5rem;
+   font-weight: bold;
+}
+
+.navbarList {
+   display: flex;
+   list-style: none;
+   align-items: center;
+   justify-content: center;
+}
+
+.hamburger {
+   background-color: transparent;
+   border: 0;
+   color: #fff;
+   font-size: 20px;
+   cursor: pointer;
+   display: none;
+}
+
+.hamburger:focus {
+   outline: none;
+}
+
+.navbarItem {
+   padding: 0px 20px;
+}
+
+.navbarLink {
+   text-decoration: none;
+   color: #fff;
+   font-weight: bold;
+   font-size: 1.2rem;
+   transition: all 0.3s;
+}
+
+.navbarLink:hover {
+   color: rgba(255, 255, 255, .6);
+}
+
+.intro {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   height: 80%;
+}
+
+.meetDownload h1 {
+   font-size: 3.5rem;
+   padding: 0px;
+   margin: 0px 0px 8px;
+}
+
+.buttonsDownload {
+   padding: 20px 0 0 0;
+}
+
+.downloadButton {
+   padding: 2.5% 30px;
+   margin: 0px 5% 0% 0%;
+   text-decoration: none;
+   background: #fff;
+   border-radius: 6px;
+   background: transparent;
+   border: 1px solid #fff;
+   color: #fff;
+   font-size: 1.4rem;
+}
+
+.iphoneImg {
+   rotate: 25deg;
+}
+
+@media screen and (max-width:960px) {
+   
+   .intro {
+      display: flex;
+      flex-direction: column;
+   }
+
+   #features {
+      display: flex; 
+      flex-direction: column;
+   }
+
+   .iphoneImg {
+      padding-top: 13%;
+   }
+
+   .navbarList {
+      display: none;
+      width: 100%;
+      flex-direction: row;
+   }
+
+   .navbarList.show {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      top: 25px;
+   }
+
+   .hamburger {
+      display: block;
+      position: absolute;
+      top: 5%;
+      right: 20%;
+   }
+
+   .backToTop:hover {
+      transform: scale(1.2);
+      right: 2%;
+      bottom: 1.2%;
+   }
+
+   .downloadButton {
+      display: flex;
+      padding: 3%;
+   }
+   
+
+}
+
+
+/* Features Section */
+#features {
+   height: 4%;
+   padding: 7% 15%;
+   text-align: center;
+   line-height: 1.5;
+   background-color: #fff;
+   z-index: 1;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.featureBox {
+   padding: 0% 5%;
+   font-size: 1.5rem;
+   width: 100%;
+}
+
+.featureBox p {
+   font-size: 1rem;
+}
+
+.fa-circle-check,
+.fa-bullseye,
+.fa-heart {
+   font-size: 5rem;
+   color: #ef8172;
+}
+
+.fa-circle-check:hover,
+.fa-bullseye:hover,
+.fa-heart:hover {
+   color: #ff4c68;
+}
+
+.fa-brands {
+   padding: 0 2% 0 0;
+}
+
+.apple {
+   background: #3d3b3b;
+   border: none;
+   transition: all 0.3s;
+}
+
+.apple:hover {
+   background: #141414;
+}
+
+.android {
+   transition: all 0.3s;
+}
+
+.android:hover {
+   background: #fff;
+   color: #141414;
+}
+
+/* Testimonials Section */
+#testimonials {
+   background: #ef8172;
+   padding: 5%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+#testimonials h2 {
+   width: 75%;
+   text-align: center;
+   color: #1f1f1f;
+   font-size: 2rem;
+}
+
+
+#press {
+   background-color: #ef8172;
+   text-align: center;
+   padding-bottom: 3%;
+}
+
+.pressContainer {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+
+.pressContainer img {
+   width: 15%;
+   margin: 20px 20px 50px;
+}
+
+.pebblesImg {
+   height: 100px;
+   width: 100px;
+   border-radius: 50%;
+   margin: 20px;
+}
+
+.pebbles {
+   color: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#pricing {
+   padding: 100px;
+   text-align: center;
+}
+
+#pricing h2 {
+   font-size: 2rem;
+   font-weight: bold;
+   line-height: 1.5;
+   color: #1f1f1f;
+}
+
+#pricing p {
+   margin-top: 0;
+   margin-bottom: 1rem;
+}
+
+.row {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   margin-right: -15px;
+   margin-left: -15px;
+   width: 100%;
+   font-size: 1.5rem;
+}
+
+.pricingColumn {
+   padding: 3% 2%;
+}
+
+.card {
+   position: relative;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: column;
+   flex-direction: column;
+   min-width: 0;
+   word-wrap: break-word;
+   background-color: #fff;
+   background-clip: border-box;
+   border: 1px solid rgba(0,0,0,.125);
+   border-radius: 0.25rem;
+}
+
+.cardHeader {
+   padding: 0.75rem 1.25rem;
+   margin-bottom: 0;
+   background-color: rgba(0,0,0,.03);
+   border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.cardBody {
+   -webkit-box-flex: 1;
+   -ms-flex: 1 1 auto;
+   flex: 1 1 auto;
+   padding: 1.25rem;
+}
+
+.cardBody p {
+   font-size: 1rem;
+}
+
+.signUp {
+   padding: 0.5rem 1rem;
+   font-size: 1.25rem;
+   border-radius: 0.3rem;
+   border: 1px solid #343a40;
+}
+
+.signUp:hover {
+   cursor: pointer;
+}
+
+.btnBlack {
+   background: #343a40;
+   color: #fff;
+}
+
+#callToAction {
+   background-color: #ff4c68;
+   text-align: center;
+   padding: 100px 15% 40px;
+}
+
+.findTrue {
+   line-height: 1.5;
+   font-size: 3.5rem;
+   font-weight: bolder;
+   color: #fff;
+}
+
+#callToAction .buttonsDownload {
+   padding: 10%;
+}
+
+#callToAction .buttonsDownload .downloadButton {
+   padding: 2%;
+}
+
+#footer {
+   text-align: center;
+   padding: 100px 15% 20%;
+}
+
+.socialIcons {
+   padding-bottom: 5%;
+   font-size: 2rem;
+   color: #343a40;
+}
+
+.fa-twitter,
+.fa-facebook-f,
+.fa-instagram,
+.fa-envelope {
+   padding-left: 25px;
+   padding-right: 25px;
+}
+
+#footer p {
+   margin-top: 0;
+   margin-bottom: 1rem;
+}
+
+#footer p a {
+   color: #007bff;
+   text-decoration: none;
+   background-color: transparent;
+}
+
+#footer p a:hover {
+   text-decoration: underline;
+   color: #17a2b8;
+}
+
+.nameForm {
+   font-size: 2rem;
+   text-align: center;
+   padding: 5%;
+   background-color: #ef8172;
+}
+
+.formContainer {
+   background: gray;
+   padding: 2%;
+   color: #fff;
+}
+
+#invalidChoice {
+   transition: all 0.3s ease;
+}
